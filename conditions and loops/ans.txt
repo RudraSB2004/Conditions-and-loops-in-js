@@ -1,0 +1,164 @@
+Q1. What Are Conditional Statements? Explain Conditional Statements with Syntax and Examples.
+Conditional statements in JavaScript are used to execute a certain block of code only if a specified condition is true. 
+They allow developers to make decisions in code, adding logic and branching to applications.
+
+Types of Conditional Statements:
+
+if Statement: Executes a block of code if a specified condition is true.
+let age = 20;
+if (age >= 18) {
+  console.log("You are eligible to vote.");
+}
+
+if...else Statement: Executes one block of code if the condition is true, and another if it is false.
+let age = 16;
+if (age >= 18) {
+  console.log("You are eligible to vote.");
+} else {
+  console.log("You are not eligible to vote.");
+}
+
+else if Statement: Used to specify multiple conditions to test sequentially.
+let score = 85;
+if (score >= 90) {
+  console.log("Grade A");
+} else if (score >= 70) {
+  console.log("Grade B");
+} else {
+  console.log("Grade C");
+} else {
+  console.log("Grade F");
+}
+
+
+Switch Statement: Used for evaluating multiple values of an expression.
+let grade = "B";
+switch (grade) {
+  case "A":
+    console.log("Excellent");
+    break;
+  case "B":
+    console.log("Good");
+    break;
+  default:
+    console.log("Needs Improvement");
+    break;
+}
+
+
+Here are the answers to each of your questions:
+
+Q1. What Are Conditional Statements? Explain Conditional Statements with Syntax and Examples.
+Conditional statements in JavaScript are used to execute a certain block of code only if a specified condition is true. They allow developers to make decisions in code, adding logic and branching to applications.
+
+Types of Conditional Statements:
+
+if Statement: Executes a block of code if a specified condition is true.
+
+javascript
+Copy code
+let age = 20;
+if (age >= 18) {
+  console.log("You are eligible to vote.");
+}
+if...else Statement: Executes one block of code if the condition is true, and another if it is false.
+
+javascript
+Copy code
+let age = 16;
+if (age >= 18) {
+  console.log("You are eligible to vote.");
+} else {
+  console.log("You are not eligible to vote.");
+}
+else if Statement: Used to specify multiple conditions to test sequentially.
+
+javascript
+Copy code
+let score = 85;
+if (score >= 90) {
+  console.log("Grade A");
+} else if (score >= 70) {
+  console.log("Grade B");
+} else {
+  console.log("Grade C");
+} else {
+  console.log("Grade F");
+}
+Switch Statement: Used for evaluating multiple values of an expression.
+
+javascript
+Copy code
+let grade = "B";
+switch (grade) {
+  case "A":
+    console.log("Excellent");
+    break;
+  case "B":
+    console.log("Good");
+    break;
+  default:
+    console.log("Needs Improvement");
+    break;
+}
+Q2. Write a Program That Grades Students Based on Their Marks.
+Here's a program that assigns grades based on student marks:
+
+javascript
+Copy code
+function gradeStudent(marks) {
+  if (marks > 90) {
+    return "A Grade";
+  } else if (marks > 70 && marks <= 90) {
+    return "B Grade";
+  } else if (marks > 50 && marks <= 70) {
+    return "C Grade";
+  } else {
+    return "F Grade";
+  }
+}
+
+let marks = 85;
+console.log("Your grade is:", gradeStudent(marks));
+
+
+Q3. What Are Loops, and Why Do We Need Them? Explain Different Types of Loops with Their Syntax and Examples.
+Loops allow us to execute a block of code multiple times until a specific condition is met. They are essential for tasks that involve repetition, such as iterating over a list, performing calculations repeatedly, or generating repetitive outputs.
+
+Types of Loops in JavaScript:
+
+for Loop: Runs a block of code a specified number of times.
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+
+
+while Loop: Runs a block of code as long as a specified condition is true.
+let i = 1;
+while (i <= 5) {
+  console.log(i);
+  i++;
+}
+
+do...while Loop: Similar to the while loop, but it executes the code block at least once before checking the condition.
+let i = 1;
+do {
+  console.log(i);
+  i++;
+} while (i <= 5);
+
+
+for...of Loop: Iterates over iterable objects, such as arrays.
+let fruits = ["apple", "banana", "cherry"];
+for (let fruit of fruits) {
+  console.log(fruit);
+}
+
+for...in Loop: Iterates over the properties of an object.
+let person = { name: "John", age: 30 };
+for (let key in person) {
+  console.log(key + ": " + person[key]);
+}
+
+
+
